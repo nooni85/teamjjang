@@ -19,16 +19,17 @@ final class CreateUserMigration extends AbstractMigration
      */
     public function up(): void
     {
-        $table = $this->table('users');
+        $table = $this->table('user');
         $table->addColumn('username', 'string', ['null' => false, 'limit' => 60, 'comment'=> '아이디'])
             ->addColumn('password', 'char', ['null' => false, 'limit' => 60, 'comment'=> '비밀번호'])
             ->addColumn('created_at', 'datetime', ['null' => false, 'comment'=> '생성일'])
             ->addColumn('updated_at', 'datetime', ['null' => false, 'comment'=> '수정일'])
+            ->addIndex('username', ['unique' => true, 'name' => 'idx_user_username'])
             ->create();
     }
 
     public function down(): void
     {
-        $this->table('users')->drop()->save();
+        $this->table('user')->drop()->save();
     }
 }

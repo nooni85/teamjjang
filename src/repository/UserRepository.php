@@ -28,7 +28,7 @@ class UserRepository
                 $stmt->close();
             }
         } catch (\Exception $e) {
-            Error::SendServerError($e->getMessage());
+            Error::ReportException($e);
         } finally {
             if ($conn!= null) {
                 mysqli_close($conn);
