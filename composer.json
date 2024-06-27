@@ -1,0 +1,17 @@
+{
+    "name": "noonihq/teamjjang",
+    "autoload": {
+        "psr-4": {
+            "Noonihq\\Teamjjang\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sangwoo Joo",
+            "email": "noonihq@gmail.com"
+        }
+    ],
+    "require": {
+        "robmorgan/phinx": "^0.16.1"
+    }
+}
