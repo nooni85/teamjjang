@@ -1,0 +1,8 @@
+.notification-container {
+    right: 2em;
+    position: fixed;
+}
+
+.notification .title {
+    background-color: var(--main-bg-color);
+}
