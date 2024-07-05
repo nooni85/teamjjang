@@ -14,6 +14,18 @@
         echo "Login";
     }
 ?>
+<div class="noti">
+    <div class="title">asdfasdf</div>
+    <div class="content">fasdfsdf</div>
+</div>
+<div class="noti">
+    <div class="title">asdfasdf</div>
+    <div class="content">fasdfsdf</div>
+</div>
+<div class="noti">
+    <div class="title">asdfasdf</div>
+    <div class="content">fasdfsdf</div>
+</div>
 <div class="container">
     <h1>팀짱 - 회원가입</h1>
     <form action="./join.php" method="post">
@@ -25,9 +37,3 @@
         <input type="submit" value="로그인하기">
     </form>
 </div>
-<script type="text/javascript">
-    var noti = new Noti();
-    noti.queue('sdfsdf', 'sdfsdf');
-    noti.queue('sdfsdf', 'sdfsdf');
-    noti.queue('sdfsdf', 'sdfsdf');
-</script>
